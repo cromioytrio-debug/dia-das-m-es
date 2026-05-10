@@ -36,6 +36,18 @@
 
     .letter-wrapper {
       perspective: 1400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .top-message {
+      margin: 0;
+      font-size: clamp(1.05rem, 2.6vw, 1.35rem);
+      font-weight: 700;
+      color: #7a2944;
+      text-align: center;
     }
 
     .envelope {
@@ -178,9 +190,9 @@
 <body>
   <main class="scene">
     <section class="letter-wrapper">
+      <p class="top-message">Com amor, para minha mãe.</p>
       <div id="envelope" class="envelope" aria-live="polite">
         <div class="envelope-front">
-          <p class="to-text">Para a minha mãe, com amor.</p>
           <button id="seal" class="seal" aria-label="Abrir carta">Abrir</button>
         </div>
 
